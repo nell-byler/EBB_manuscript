@@ -1,0 +1,130 @@
+\documentclass [11pt, proquest] {uwthesis}[2014/11/13]
+% \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
+
+% ==========   Local defs and mods
+\bibliographystyle{apj}
+\usepackage{graphicx}
+\usepackage[suffix=]{epstopdf}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{xspace}
+\usepackage{caption} % enables use of \ContinuedFloat
+
+% journal abbreviations
+\usepackage{aas_macros}
+\usepackage{deluxetable}
+
+ %         Make Scientific Notation
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+% My added macros
+\usepackage{mycommands}
+
+%---------------------
+%%%%%%%
+%-----------------------
+
+\begin{document}
+ 
+% ==========   Preliminary pages
+%
+% ( revised 2012 for electronic submission )
+%
+
+\prelimpages
+ 
+%
+% ----- copyright and title pages
+%
+\Title{THE TITLE IS PUGS}
+\Author{Eleanor Beryl Byler}
+\Year{2017}
+\Program{Astronomy}
+
+\Chair{Julianne J. Dalcanton}{Professor}{Department of Astronomy}
+\Signature{Emily Levesque}
+\Signature{Jessica Werk}
+%\Signature{\v{Z}eljko Ivezi\'{c}}
+%\Signature{Eric Agol}
+%\Signature{David Cobden, GSR}
+
+\copyrightpage
+
+ \titlepage  
+
+ 
+%
+% ----- signature and quoteslip are gone
+%
+
+%
+% ----- abstract
+%
+\setcounter{page}{-1}
+\include{abstract}
+ 
+\tableofcontents
+\listoffigures
+%\listoftables  % I have no tables.... yet
+ 
+
+%\chapter*{Glossary}      % starred form omits the `chapter x'
+%\addcontentsline{toc}{chapter}{Glossary}
+%\thispagestyle{plain}
+
+%\begin{glossary}
+%\item[obscure term] jargon I use too often
+%\item[back-up] a copy of a file
+%\end{glossary}
+
+\acknowledgments{% \vskip2pc
+  % {\narrower\noindent
+A section with acknowledgements. This will in no way be as heartwarming as Jim's. Also Pugs.
+
+}
+
+\dedication{\begin{center}HERE GOES A DEDICATION TO PUGS.\end{center}}
+
+% end of the preliminary pages
+ 
+ \textpages
+ 
+\include{chapter1/ch1}  % intro
+\include{chapter2/ch2}  % model
+\include{chapter3/ch3}  % UV
+\include{chapter4/ch4}  % pAGB
+\include{chapter5/ch5}  % the future
+\include{extra/appendix} % appendix
+
+%gullible  - the last word in my thesis
+
+\printendnotes
+
+%
+% ==========   Bibliography
+%
+%\nocite{*}   % include everything in the uwthesis.bib file
+%\bibliographystyle{apj}
+
+\bibliography{manuscript/uwthesis.bib}
+%\bibliography{references.bib}
+
+%\appendix
+%\raggedbottom\sloppy
+%  
+%\chapter{the first appendix of code or other}
+%this is the code and stuff i need to include
+
+
+
+\vita{
+About me. I might like pugs.
+}
+
+
+\end{document}

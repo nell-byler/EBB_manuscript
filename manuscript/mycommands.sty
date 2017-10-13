@@ -1,0 +1,78 @@
+\ProvidesPackage{mycommands}[2017/10/11 v1.0 My own macros]
+
+\def\lesssim{\mathrel{\hbox{\rlap{\hbox{\lower3pt\hbox{$\sim$}}}\hbox{\raise2pt\hbox{$<$}}}}}
+\def\gtrsim{\mathrel{\hbox{\rlap{\hbox{\lower3pt\hbox{$\sim$}}}\hbox{\raise2pt\hbox{$>$}}}}}
+\newcommand{\sun}{\ensuremath{\odot}}
+\newcommand{\z}[1]{$z \sim {#1}$}
+\newcommand{\FSPS}{{\sc FSPS}\xspace}
+\newcommand{\pFSPS}{{\tt \textbf{python-fsps}}\xspace}
+\newcommand{\CloudyFSPS}{{\tt \textbf{CloudyFSPS}}\xspace}
+\newcommand{\Mappings}{{\sc Mappings-III}\xspace}
+\newcommand{\Pegase}{\textsc{P{\'e}gase}\xspace}
+\newcommand{\SB}{\textsc{Starburst-99}\xspace}
+\newcommand{\Popstar}{\textsc{PopStar}\xspace}
+\newcommand{\Cloudy}{\textsc{Cloudy}\xspace}
+\newcommand{\Prospector}{{\sc Prospector}\xspace}
+\newcommand{\hii}{H\,{\sc ii}\xspace}
+\newcommand{\nii}{[N\,{\sc ii}]\xspace}
+\newcommand{\niii}{[N\,{\sc iii}]\xspace}
+\newcommand{\sii}{[S\,{\sc ii}]\xspace}
+\newcommand{\oiii}{[O\,{\sc iii}]\xspace}
+\newcommand{\oii}{[O\,{\sc ii}]\xspace}
+\newcommand{\oi}{[O\,{\sc i}]\xspace}
+\newcommand{\neiii}{[Ne\,{\sc iii}]\xspace}
+\newcommand{\heii}{[He\,{\sc ii}]\xspace}
+\newcommand{\hei}{[He\,{\sc i}]\xspace}
+\newcommand{\civ}{C\,{\sc iv}\xspace}
+\newcommand{\siIII}{Si\,{\sc iii}\xspace}
+\newcommand{\siII}{Si\,{\sc ii}\xspace}
+\newcommand{\alII}{Al\,{\sc ii}\xspace}
+\newcommand{\mgii}{Mg\,{\sc ii}\xspace}
+\newcommand{\suIII}{Si\,{\sc ii}\xspace}
+\newcommand{\ciii}{C\,{\sc iii}\xspace}
+\newcommand{\cii}{C\,{\sc ii}\xspace}
+\newcommand\vs{\ensuremath{\mathrm{vs.}}\xspace}
+\newcommand{\sigmaL}{\ensuremath{\sigma_{\mathrm{line}}}\xspace}
+\newcommand{\sigmaR}{\ensuremath{\sigma_{\mathrm{ratio}}}\xspace}
+\newcommand{\femline}{\ensuremath{f_{\mathrm{line}}}\xspace}
+\newcommand\Lsun{\ensuremath{\mathrm{L_{\sun}}}\xspace}
+\newcommand\Msun{\ensuremath{\mathrm{M_{\sun}}}\xspace}
+\newcommand{\ha}{\ensuremath{\mathrm{H\alpha}}\xspace}
+\newcommand{\hb}{\ensuremath{\mathrm{H\beta}}\xspace}
+\newcommand{\Myr}{$\,$Myr\xspace}
+\newcommand{\logten}{\ensuremath{\log_{10}}}
+\newcommand{\logz}{\ensuremath{\logten \mathrm{Z}/\mathrm{Z}_{\sun}}\xspace}
+\newcommand{\logZeq}[1]{\ensuremath{\logten \mathrm{Z}/\mathrm{Z}_{\sun} = #1}}
+\newcommand{\ang}{\ensuremath{\mbox{\AA}}\xspace}
+\newcommand{\logQ}[1]{\ensuremath{\logten Q_{#1}}}
+\newcommand{\QH}{\ensuremath{Q_{\mathrm{H}}}}
+\newcommand{\QHat}{\ensuremath{\hat{Q}_{\mathrm{H}}}}
+\newcommand{\U}{\ensuremath{\mathcal{U}_{0}}\xspace}
+\newcommand{\logU}{\ensuremath{\logten \mathcal{U}_0}}
+\newcommand{\logUeq}[1]{\ensuremath{\logten \mathcal{U}_0 = #1}}
+\newcommand{\kms}{\ensuremath{\;\mathrm{km}\;\mathrm{s}^{-1}}\xspace}
+\newcommand{\fcont}{\ensuremath{\mathcal{F}_{\mathrm{cont}}(\lambda)}\xspace}
+\newcommand{\fline}{\ensuremath{\mathcal{F}_{\mathrm{line}}(\lambda)}\xspace}
+\newcommand{\Te}{\ensuremath{T_{e}}\xspace}
+\newcommand{\hnu}{\ensuremath{h\nu}\xspace}
+\newcommand{\Lya}{\ensuremath{\mathrm{Ly}\alpha}\xspace}
+\newcommand{\hg}{\ensuremath{\mathrm{H\gamma}}\xspace}
+\newcommand{\hd}{\ensuremath{\mathrm{H\delta}}\xspace}
+\newcommand{\hahb}{\ensuremath{\mathrm{H\alpha}/\mathrm{H\beta}}\xspace}
+\newcommand\lam[1]{\ensuremath{\lambda #1}}
+\newcommand{\nH}{\ensuremath{n_{\mathrm{H}}}\xspace}
+\newcommand{\cm}[1]{\ensuremath{\mathrm{cm}^{#1}}}
+\newcommand{\Rin}{\ensuremath{R_{\mathrm{inner}}}\xspace}
+\newcommand{\Rten}{\ensuremath{R_{\mathrm{10}}}\xspace}
+\newcommand{\logR}{\ensuremath{\logten R_{\mathrm{inner}}}\xspace}
+\newcommand{\tauhat}[1]{\ensuremath{\hat{\tau}_{\mathrm{#1}}}}
+\newcommand{\tesc}{\ensuremath{t_{\mathrm{esc}}}\xspace}
+\newcommand{\Up}{\ensuremath{\mathcal{U}}\xspace}
+\newcommand{\Rs}{\ensuremath{R_{\mathrm{S}}}\xspace}
+\newcommand\s[1]{\ensuremath{\mathrm{s}^{#1}}}
+\newcommand\cms{\ensuremath{\mathrm{cm} \cdot \mathrm{s}^{-1}}\xspace}
+\newcommand\niiha{\nii{}\lam{6584}/\ha{}\xspace}
+\newcommand\oiiihb{\oiii{}\lam{5007}/\hb{}\xspace}
+\newcommand\oiiioii{\oiii{}/\oii{}\xspace}
+\newcommand{\Heat}{\ensuremath{\Gamma_{\mathrm{ion}}}\xspace}
+\newcommand{\Cool}{\ensuremath{\Lambda_{\mathrm{rad}}}\xspace}
